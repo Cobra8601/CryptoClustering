@@ -13,7 +13,7 @@ Initialized the model using 4 clusters and a random state of 1 and fit the model
 Created a PCA model with 3 components and transformed the data. Obtained the variance (0.88862186) of the three components. Created a new DataFrame of the PCA data and used the 'coin_id' as the index column. 
 
 ## Find the K value for the PCA Dataset
-Created a list of 10 k values. Created an empty list to store the second set of inertia values. Used a 'for' loop to compute the inertia for each possible value of k and stored that in the inertia list. Created a dictionary of the data and used it to build a  DataFrame to plot the elbow curve of k values (x) and inertia2 (y). The elbow curve plot supported the best value for k to be 4. 
+Created a list of 10 k values. Created an empty list to store the second set of inertia values. Used a 'for' loop to compute the inertia for each possible value of k and stored that in the inertia list. Created a dictionary of the data and used it to build a  DataFrame to plot the elbow curve of k values (x) and inertia_2 (y). The elbow curve plot supported the best value for k to be 4. 
 
 ## Cluster the Cryptocurrencies with K-Means using the PCA Dataset
 Initialized the model using 4 clusters and a random state of 1 and fit the model to the PCA dataset. Initiated the prediction of the cryptocurrencies to the clusters and made a copy of the of the DataFrame including a new column to display the predicted clusters. Visualized the data in a scatter plot; x = PCA1 aka price change % of the currency over 24 hours, y = PCA2 aka price change % of the currency over the past week using the ten k predictor values.
